@@ -1,45 +1,52 @@
-# Miscellaneous
-*.class
+# --------------------------------------
+# General system artifacts
+# --------------------------------------
 *.log
 *.pyc
 *.swp
+*.class
 .DS_Store
-.atom/
-.build/
-.buildlog/
 .history
-.svn/
-.swiftpm/
-migrate_working_dir/
 
-# IntelliJ related
+# Atom / IntelliJ / VS Code settings
+.atom/
+.idea/
 *.iml
 *.ipr
 *.iws
-.idea/
-
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
+# Uncomment to exclude VS Code settings
 #.vscode/
 
-# Flutter/Dart/Pub related
-**/doc/api/
-**/ios/Flutter/.last_build_id
+# --------------------------------------
+# Flutter & Dart
+# --------------------------------------
 .dart_tool/
 .flutter-plugins
 .flutter-plugins-dependencies
-.pub-cache/
 .pub/
-/build/
+.pub-cache/
+build/
+**/doc/api/
+**/ios/Flutter/.last_build_id
 
-# Symbolication related
+# --------------------------------------
+# Android Studio build outputs
+# --------------------------------------
+android/app/debug/
+android/app/profile/
+android/app/release/
+
+# --------------------------------------
+# Supabase / Environment Secrets
+# --------------------------------------
+assets/supabase.env
+
+# --------------------------------------
+# Custom / App Specific
+# --------------------------------------
 app.*.symbols
-
-# Obfuscation related
 app.*.map.json
+migrate_working_dir/
 
-# Android Studio will place build artifacts here
-/android/app/debug
-/android/app/profile
-/android/app/release
+# ⚠️ Optional: exclude sensitive constants file
+lib/constants.dart
